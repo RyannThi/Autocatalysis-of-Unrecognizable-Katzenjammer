@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CollisionChecker">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Library/plugins/CollisionChecker.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

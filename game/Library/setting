@@ -1,0 +1,42 @@
+{
+	"keysys": {
+		"repslow": 16,
+		"menu": 27,
+		"repfast": 17,
+		"snapshot": 36,
+		"retry": 82
+	},
+	"resx": 1280,
+	"keys": {
+		"right": 39,
+		"left": 37,
+		"slow": 16,
+		"down": 40,
+		"up": 38,
+		"special": 67,
+		"shoot": 90,
+		"spell": 88
+	},
+	"timezone": 8,
+	"nosplash": true,
+	"bgmvolume": 100,
+	"res": 1,
+	"allowsnapshot": true,
+	"resy": 720,
+	"mod": "AoUKProject",
+	"font": "",
+	"vsync": true,
+	"keys2": {
+		"right": 99,
+		"left": 97,
+		"slow": 65,
+		"down": 98,
+		"up": 101,
+		"special": 70,
+		"shoot": 83,
+		"spell": 68
+	},
+	"username": "User",
+	"sevolume": 100,
+	"windowed": true
+}

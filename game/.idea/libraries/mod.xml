@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="mod">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mod/test 2.zip!/" />
+      <root url="jar://$PROJECT_DIR$/mod/AoUKProject.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

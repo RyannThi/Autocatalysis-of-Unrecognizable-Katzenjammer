@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="players">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Library/players/Rumia.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Library/players/Izayoi Sakuya.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Library/players/Hakurei Reimu.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Library/players/Kirisame Marisa.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

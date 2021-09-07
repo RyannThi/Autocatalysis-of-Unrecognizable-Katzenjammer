@@ -1,0 +1,73 @@
+{
+	"repsaver": "BOO",
+	"quest_1": false,
+	"quest_2": true,
+	"tutoriallock": false,
+	"difficulty_select": 2,
+	"player_select": 5,
+	"hiscore": {
+		"1@Act1@Sanae_Kochiya": 1415530,
+		"1@Act1-1@Sanae_Kochiya": 2004820,
+		"SC Debugger@SC Debugger@reimu_player": 1120,
+		"SpellCard@SpellCard@Sanae_Kochiya": 0,
+		"Title@AoUKGame@Sanae_Kochiya": 0,
+		"SC Debugger@SC Debugger@Sanae_Kochiya": 6460,
+		"SpellCard@SpellCard@reimu_player": 0,
+		"1@Tutorial@Sanae_Kochiya": 1209999998790,
+		"1@Act1-2@Sanae_Kochiya": 1778500
+	},
+	"quest_3": true,
+	"mp": 145,
+	"spell_card_hist": {
+		"All": {
+			"asddsa": {
+				"Sanae_Kochiya": [
+					0,
+					19
+				]
+			},
+			"asddas\\nfdasf": {
+				"reimu_player": [
+					0,
+					1
+				]
+			},
+			"Pathogen Annihilation \"Two Steps in the Afternoon\"": {
+				"Sanae_Kochiya": [
+					12,
+					81
+				]
+			},
+			"asddas": {
+				"reimu_player": [
+					0,
+					6
+				],
+				"marisa_player": [
+					0,
+					1
+				],
+				"Sanae_Kochiya": [
+					0,
+					4
+				]
+			},
+			"「」": {
+				"Sanae_Kochiya": [
+					61,
+					206
+				],
+				"reimu_player": [
+					0,
+					2
+				]
+			},
+			"asda": {
+				"Sanae_Kochiya": [
+					0,
+					1
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,3 @@
+Fuzzbearplush (+ DD) - Sanae player sprite
+
+Other credits inside Library/ryannlibcredits.txt
