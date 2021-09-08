@@ -797,12 +797,12 @@ function timeCounter:render()
             cd2 = 99
         end
         if cd1 >= self.t1 then
-            RenderText("time", string.format("%2d", int(cd1)) .. ".", x, y1, scale1, "vcenter", "right")
-            RenderText("time", string.format("%d%d", min(9, cd2 / 10), min(9, cd2 % 10)), x, y2, scale2, "vcenter", "left")
+            RenderText("sc_time", string.format("%2d", int(cd1)) .. ".", x, y1 - 8, scale1, "vcenter", "right")
+            RenderText("sc_time", string.format("%d%d", min(9, cd2 / 10), min(9, cd2 % 10)), x, y2 - 8, scale2, "vcenter", "left")
         else
-            RenderText("time", string.format("0%d", min(99.99, int(cd1))) .. " ", x, y1, scale1 * scalew, "vcenter", "right")
-            RenderText("time", ".", x, y1, scale1, "vcenter", "right")
-            RenderText("time", string.format("%d%d", min(9, cd2 / 10), min(9, cd2 % 10)), x, y2, scale2, "vcenter", "left")
+            RenderText("sc_time", string.format("0%d", min(99.99, int(cd1))) .. " ", x, y1 - 8, scale1 * scalew, "vcenter", "right")
+            RenderText("sc_time", ".", x, y1, scale1, "vcenter", "right")
+            RenderText("sc_time", string.format("%d%d", min(9, cd2 / 10), min(9, cd2 % 10)), x, y2 - 8, scale2, "vcenter", "left")
         end
     end
 end
@@ -944,231 +944,6 @@ function infobar:render()
                 Render("boss_cardleft", x2, y2, 0, 0.5 + (t / at) * 0.5)
             end
         end
-    end
-end
-
-----------------------------------------
----boss 符卡名（gzz式）
----@class boss.sc_name
----@return boss.sc_name
-boss.sc_name = Class(object)
-local sc_name = boss.sc_name
----@param b object @目标对象
----@param name string @符卡名称
----@param score boolean @是否显示score
-local sc_name = boss.sc_name
-function sc_name:init(b, name, score)
-    if score == nil then
-        score = true
-    end
-    self.layer = LAYER_TOP + 1
-    self.boss = b
-    self.name = name or ""
-    self.score = score
-    self.xp = -8
-    self.yp = 0
-    if self.name == "" then
-        RawDel(self)
-    end
-    self.x = 192
-    self.y = 236
-    self.ybot = 380
-    self.xoffset = 200
-    self.xoffset2 = 0
-    self.yoffset = -self.ybot
-    local b = self.boss
-    if b.__hpbartype2 and int(b.__hpbartype2 / 10) == 2 then
-        self.yp = -8
-    end
-    self.bound = false
-    self.flag = 0
-    self._scale = 1
-    self._scale2 = 1
-    self._alpha = 0
-    self.talpha = 0
-    self.talpha2 = 0
-end
-function sc_name:frame()
-    local b = self.boss
-    local _ui = b.ui
-    local sc_hist = 0
-    if IsValid(b) then
-        sc_hist = b._sc_hist
-    end
-    if IsValid(_ui) then
-        self.hide = not (_ui.drawspell)
-        sc_hist = _ui.sc_hist
-    end
-    self.sc_hist = sc_hist
-    local t, t1, t2, ct, t3 = 60, 30, 30, 10, 40
-    local etc = abs(t2 - t3) - 0
-    if IsValid(b) then
-        local dy = (b.ui_slot - 1) * 44
-        self._dy = dy
-        local bonus
-        if b.sc_bonus then
-            bonus = string.format("0%.0f", b.sc_bonus - b.sc_bonus % 10)
-        else
-            bonus = "FAILED"
-        end
-        self.bonus = bonus
-        local players
-        if Players then
-            players = Players(b)
-        else
-            players = { player }
-        end
-        local _flag = false
-        local x = self.x
-        local y = self.y + self.yoffset + dy
-        for _, p in pairs(players) do
-            if IsValid(p) and abs(p.x - x) <= 180
-                    and abs(p.y - y) <= 60
-                    and self.timer > 100 + etc + t1 then
-                _flag = true
-                break
-            end
-        end
-        if _flag then
-            self.flag = self.flag + 1
-        else
-            self.flag = self.flag - 1
-        end
-    else
-        self.flag = 0
-    end
-    self.flag = min(max(0, self.flag), 18)
-    if not (self.death) then
-        if self.timer > 30 then
-            self.xoffset = max(self.xoffset - 10, 0)
-        end
-        self.xoffset2 = 0
-        local _t = self.timer - 60
-        local _t1 = 100 + etc
-        local _t2 = _t1 + t1
-        local _t3 = 60 + etc
-        local _t4 = _t3 + t
-        local _t5 = t3 - ct
-        local _t6 = _t5 + t2
-        if self.timer > _t1 and self.timer < _t2 then
-            self.talpha = min(self.talpha + (1 / t1), 1)
-        end
-        if self.timer > _t3 and self.timer < _t4 then
-            local tmp = (90 / t) * (_t - etc)
-            self.yoffset = -self.ybot + (self.ybot + self.yp) * sin(tmp * sin(tmp))
-        end
-        if self.timer > _t5 and self.timer < _t6 then
-            self.talpha2 = min(self.talpha2 + (1 / t2), 1)
-            self._scale2 = max(1 - sin((90 / t2) * (self.timer - t3 + ct)), 0)
-        end
-        if self.timer < t3 then
-            self._scale = max(150 - 120 * sin((90 / t3) * self.timer), 30) / 30
-        end
-        self._alpha = min(self.timer / t3, 1)
-    else
-        if IsValid(b) and b.is_exploding and not (self.explodeFlag) then
-            self.timer = -60
-            self.explodeFlag = true
-        end
-        if self.timer > 0 then
-            self.xoffset = min(self.xoffset + 8 + self.xp, 220)
-        end
-        self.xoffset2 = self.xoffset
-        self._scale = 1
-        self._alpha = 1
-        if self.timer > 60 then
-            RawDel(self)
-        end
-    end
-end
-function sc_name:render()
-    local b = self.boss
-    local sc_hist = self.sc_hist or { 0, 0 }
-    local bonus = self.bonus
-    local dy = self._dy
-    local x = self.x + self.xoffset + self.xp
-    local y = self.y + self.yoffset - dy + self.yp
-    local alpha = 1 - self.flag / 30
-    local alpha2 = alpha * self._alpha
-    local s = GetImageScale()
-    SetImageState("boss_spell_name_bg", "",
-            Color(alpha * 255 * self.talpha2, 255, 255, 255))
-    x = self.x + self.xoffset2
-    Render("boss_spell_name_bg", x, y, 0, 1 + 0.5 * self._scale2)
-    x = self.x + self.xoffset2 + self.xp
-    y = y - 10
-    SetImageScale(s * self._scale)
-    local d = sqrt(2)
-    local _x, _y
-    for i = 0, 8 do
-        --沙雕描边
-        _x = x + d * cos(i * 45)
-        _y = y + d * sin(i * 45)
-        RenderTTF("sc_name", self.name,
-                _x, _x, _y - 2, _y - 2,
-                Color(alpha2 * 255, 0, 0, 0),
-                "right", "noclip")
-    end
-    RenderTTF("sc_name", self.name,
-            x, x, y - 2, y - 2,
-            Color(alpha2 * 255, 255, 255, 255),
-            "right", "noclip")
-    SetImageScale(s)
-    local a = alpha * 255 * self.talpha
-    if self.score then
-        local fontsize = 0.5
-        local xm, ym = 4, -1 --字符坐标偏移值
-        x = self.x + self.xoffset - 5 + self.xp
-        y = self.y - dy - 31 + self.yp
-        SetFontState("bonus2", "", Color(a, 0, 0, 0))
-        --RenderText("bonus2", bonus, x - 90, y, fontsize, "right")
-        --RenderText("bonus2", string.format("%d/%d", sc_hist[1], sc_hist[2]), x, y, fontsize, "right")
-        --RenderText("bonus", "BONUS          HISTORY", x - 40, y, 0.5, "right")
-        SetImageState("cardui_history", "", Color(a, 255, 255, 255))
-        SetImageState("cardui_bonus", "", Color(a, 255, 255, 255))
-        Render("cardui_history", x - 63 + self.xp, y - 6 + self.yp, 0, 0.5)
-        Render("cardui_bonus", x - 156 + self.xp, y - 6 + self.yp, 0, 0.5)
-        SetFontState("bonus2", "", Color(a, 255, 255, 255))
-        --x = x - 1
-        --y = y + 1
-        --RenderText("bonus", "BONUS          HISTORY", x - 40, y, 0.5, "right")
-
-        if not (self.death) or (self.death and IsValid(b) and b.is_exploding and self.timer <= 0) then
-            x = x + xm + 4 + self.xp
-            y = y + ym + self.yp
-            if bonus ~= "FAILED" then
-                RenderText("bonus2", bonus, x - 90, y, fontsize, "right")
-            else
-                SetImageState("sc_failed", "", Color(a, 255, 255, 255))
-                Render("sc_failed", x - 108, y - ym - 6, 0, fontsize)
-            end
-            if self.yp == 0 then
-                if sc_hist[2] < 100 then
-                    ---------对history显示原作化
-                    x = x - 8
-                    RenderText("bonus2", string.format("%02d/%02d", sc_hist[1], sc_hist[2]), x, y, fontsize, "right")
-                elseif sc_hist[1] <= 99 then
-                    x = x - 8
-                    RenderText("bonus2", string.format("%02d/99+", sc_hist[1], sc_hist[2]), x, y, fontsize, "right")
-                elseif sc_hist[1] > 99 then
-                    SetImageState("sc_master", "", Color(a, 255, 255, 255))
-                    Render("sc_master", x - 29, y - ym - 7, 0, fontsize)
-                end
-            else
-                x = x - 52
-                RenderText("bonus2", string.format("%02d/%02d", sc_hist[1], sc_hist[2]), x, y, fontsize, "left")
-            end
-        end
-    end
-end
-function sc_name:kill()
-    self.class.del(self)
-end
-function sc_name:del()
-    PreserveObject(self)
-    if not (self.death) then
-        self.death = true
-        self.timer = -1
     end
 end
 
@@ -1475,6 +1250,238 @@ function boss_ui:kill()
     boss_ui.active_count = boss_ui.active_count - 1
 end
 boss_ui.del = boss_ui.kill
+
+----------------------------------------
+---boss 符卡名（gzz式）
+---@class boss.sc_name
+---@return boss.sc_name
+boss.sc_name = Class(object)
+local sc_name = boss.sc_name
+---@param b object @目标对象
+---@param name string @符卡名称
+---@param score boolean @是否显示score
+local sc_name = boss.sc_name
+function sc_name:init(b, name, score)
+    if score == nil then
+        score = true
+    end
+    self.layer = LAYER_TOP + 5
+    self.boss = b
+    self.name = name or ""
+    self.score = score
+    self.xp = -8
+    self.yp = 0
+    if self.name == "" then
+        RawDel(self)
+    end
+    self.x = 192
+    self.y = 236
+    self.ybot = 380
+    self.xoffset = 200
+    self.xoffset2 = 0
+    self.yoffset = -self.ybot
+    local b = self.boss
+    if b.__hpbartype2 and int(b.__hpbartype2 / 10) == 2 then
+        self.yp = -8
+    end
+    self.bound = false
+    self.flag = 0
+    self._scale = 1
+    self._scale2 = 1
+    self._alpha = 0
+    self.talpha = 0
+    self.talpha2 = 0
+end
+function sc_name:frame()
+    local b = self.boss
+    local _ui = b.ui
+    local sc_hist = 0
+    if IsValid(b) then
+        sc_hist = b._sc_hist
+    end
+    if IsValid(_ui) then
+        self.hide = not (_ui.drawspell)
+        sc_hist = _ui.sc_hist
+    end
+    self.sc_hist = sc_hist
+    local t, t1, t2, ct, t3 = 60, 30, 30, 10, 40
+    local etc = abs(t2 - t3) - 0
+    if IsValid(b) then
+        local dy = (b.ui_slot - 1) * 44
+        self._dy = dy
+        local bonus
+        if b.sc_bonus then
+            bonus = string.format("0%.0f", b.sc_bonus - b.sc_bonus % 10)
+        else
+            bonus = "FAILED"
+        end
+        self.bonus = bonus
+        local players
+        if Players then
+            players = Players(b)
+        else
+            players = { player }
+        end
+        local _flag = false
+        local x = self.x
+        local y = self.y + self.yoffset + dy
+        for _, p in pairs(players) do
+            if IsValid(p) and abs(p.x - x) <= 180
+                    and abs(p.y - y) <= 60
+                    and self.timer > 100 + etc + t1 then
+                _flag = true
+                break
+            end
+        end
+        if _flag then
+            self.flag = self.flag + 1
+        else
+            self.flag = self.flag - 1
+        end
+    else
+        self.flag = 0
+    end
+    self.flag = min(max(0, self.flag), 18)
+    if not (self.death) then
+        if self.timer > 30 then
+            self.xoffset = max(self.xoffset - 10, 0)
+        end
+        self.xoffset2 = 0
+        local _t = self.timer - 60
+        local _t1 = 100 + etc
+        local _t2 = _t1 + t1
+        local _t3 = 60 + etc
+        local _t4 = _t3 + t
+        local _t5 = t3 - ct
+        local _t6 = _t5 + t2
+        if self.timer > _t1 and self.timer < _t2 then
+            self.talpha = min(self.talpha + (1 / t1), 1)
+        end
+        if self.timer > _t3 and self.timer < _t4 then
+            local tmp = (90 / t) * (_t - etc)
+            self.yoffset = -self.ybot + (self.ybot + self.yp) * sin(tmp * sin(tmp))
+        end
+        if self.timer > _t5 and self.timer < _t6 then
+            self.talpha2 = min(self.talpha2 + (1 / t2), 1)
+            self._scale2 = max(1 - sin((90 / t2) * (self.timer - t3 + ct)), 0)
+        end
+        if self.timer < t3 then
+            self._scale = max(150 - 120 * sin((90 / t3) * self.timer), 30) / 30
+        end
+        self._alpha = min(self.timer / t3, 1)
+    else
+        if IsValid(b) and b.is_exploding and not (self.explodeFlag) then
+            self.timer = -60
+            self.explodeFlag = true
+        end
+        if self.timer > 0 then
+            self.xoffset = min(self.xoffset + 8 + self.xp, 220)
+        end
+        self.xoffset2 = self.xoffset
+        self._scale = 1
+        self._alpha = 1
+        if self.timer > 60 then
+            RawDel(self)
+        end
+    end
+end
+function sc_name:render()
+    local b = self.boss
+    local sc_hist = self.sc_hist or { 0, 0 }
+    local bonus = self.bonus
+    local dy = self._dy
+    local x = self.x + self.xoffset + self.xp
+    local y = self.y + self.yoffset - dy + self.yp
+    local alpha = 1 - self.flag / 30
+    local alpha2 = alpha * self._alpha
+    local s = GetImageScale()
+    SetImageState("boss_spell_name_bg", "",
+            Color(alpha * 255 * self.talpha2, 255, 255, 255))
+    x = self.x + self.xoffset2
+    Render("boss_spell_name_bg", x, y, 0, 1 + 0.5 * self._scale2)
+    x = self.x + self.xoffset2 + self.xp
+    y = y - 10
+    SetImageScale(s * self._scale)
+    local d = sqrt(2)
+    local _x, _y
+
+    SetImageScale(s)
+    local a = alpha * 255 * self.talpha
+    if self.score then
+        local fontsize = 0.5
+        local xm, ym = 4, -1 --字符坐标偏移值
+        x = self.x + self.xoffset - 5 + self.xp
+        y = self.y - dy - 31 + self.yp
+        SetFontState("bonus2", "", Color(a, 0, 0, 0))
+        --RenderText("bonus2", bonus, x - 90, y, fontsize, "right")
+        --RenderText("bonus2", string.format("%d/%d", sc_hist[1], sc_hist[2]), x, y, fontsize, "right")
+        --RenderText("bonus", "BONUS          HISTORY", x - 40, y, 0.5, "right")
+        SetImageState("cardui_history", "", Color(a, 255, 255, 255))
+        SetImageState("cardui_bonus", "", Color(a, 255, 255, 255))
+        Render("cardui_history", x - 63 + self.xp, y - 6 + self.yp, 0, 0.5)
+        Render("cardui_bonus", x - 156 + self.xp, y - 6 + self.yp, 0, 0.5)
+        SetFontState("bonus2", "", Color(a, 255, 255, 255))
+        --x = x - 1
+        --y = y + 1
+        --RenderText("bonus", "BONUS          HISTORY", x - 40, y, 0.5, "right")
+
+        if not (self.death) or (self.death and IsValid(b) and b.is_exploding and self.timer <= 0) then
+            x = x + xm + 4 + self.xp
+            y = y + ym + self.yp
+            if bonus ~= "FAILED" then
+                RenderText("bonus2", bonus, x - 90, y, fontsize, "right")
+            else
+                SetImageState("sc_failed", "", Color(a, 255, 255, 255))
+                Render("sc_failed", x - 108, y - ym - 6, 0, fontsize)
+            end
+            if self.yp == 0 then
+                if sc_hist[2] < 100 then
+                    ---------对history显示原作化
+                    x = x - 8
+                    RenderText("bonus2", string.format("%02d/%02d", sc_hist[1], sc_hist[2]), x, y, fontsize, "right")
+                elseif sc_hist[1] <= 99 then
+                    x = x - 8
+                    RenderText("bonus2", string.format("%02d/99+", sc_hist[1], sc_hist[2]), x, y, fontsize, "right")
+                elseif sc_hist[1] > 99 then
+                    SetImageState("sc_master", "", Color(a, 255, 255, 255))
+                    Render("sc_master", x - 29, y - ym - 7, 0, fontsize)
+                end
+            else
+                x = x - 52
+                RenderText("bonus2", string.format("%02d/%02d", sc_hist[1], sc_hist[2]), x, y, fontsize, "left")
+            end
+        end
+        x = self.x + self.xoffset + self.xp
+        y = self.y + self.yoffset - dy + self.yp
+        x = self.x + self.xoffset2 + self.xp
+        y = y - 10
+        for i = 0, 8 do
+            --沙雕描边
+            _x = x + d * cos(i * 45)
+            _y = y + d * sin(i * 45)
+            RenderTTF("sc_name", lstg.var.spell_text or self.name,
+                    _x, _x, _y - 7, _y - 7,
+                    Color(alpha2 * 255, 0, 0, 0),
+                    "right", "noclip")
+        end
+        RenderTTF("sc_name", lstg.var.spell_text or self.name,
+                x, x, y - 7, y - 7,
+                Color(alpha2 * 255, 255, 255, 255),
+                "right", "noclip")
+    end
+end
+function sc_name:kill()
+    self.class.del(self)
+end
+function sc_name:del()
+    PreserveObject(self)
+    if not (self.death) then
+        self.death = true
+        self.timer = -1
+    end
+end
+
+
 
 function boss:SetUIDisplay(hp, name, cd, spell, pos, pointer)
     self.ui.drawhp = hp

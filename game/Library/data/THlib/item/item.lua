@@ -457,14 +457,14 @@ function item:PlayerMiss()
     lstg.var.lifeleft = lstg.var.lifeleft - 1
     lstg.var.power = math.max(lstg.var.power - 50, 100)
     lstg.var.bomb = max(lstg.var.bomb, 3)
-    if lstg.var.lifeleft > 0 then
+    --[[if lstg.var.lifeleft > 0 then
         for i = 1, 7 do
             local a = 90 + (i - 4) * 18 + self.x * 0.26
             New(item_power, self.x, self.y + 10, 3, a)
         end
     else
         New(item_power_full, self.x, self.y + 10)
-    end
+    end--]]
 end
 
 function item.PlayerSpell()

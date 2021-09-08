@@ -5,11 +5,13 @@ lstg.var._boss_class_sc_index = _boss_class_sc_index
 stage_init = stage.New('init', true, true)
 function stage_init:init()
     menu_items = {}
-    for i, v in ipairs(player_list) do
-        table.insert(menu_items, { player_list[i][1], function()
-            menu.FlyOut(menu_player_select, 'left')
-            lstg.var.player_name = player_list[i][2]
-            lstg.var.rep_player = player_list[i][3]
+    item_list = {1, 2, 3, 4, 5, 6}
+    for i, v in ipairs(item_list) do
+        table.insert(menu_items, { item_list[i], function()
+            menu.FlyOut(menu_item_select, 'left')
+            --lstg.var.player_name = player_list[i][2]
+            --lstg.var.rep_player = player_list[i][3]
+            lstg.var.isc_item = item_list[i]
             task.New(stage_init, function()
                 task.Wait(30)
                 New(mask_fader, 'close')
@@ -18,9 +20,11 @@ function stage_init:init()
             end)
         end })
     end
-    menu_player_select = New(simple_menu, 'Select Player', menu_items)
+    lstg.var.player_name = "Sanae_Kochiya"
+    lstg.var.rep_player = "Sanae"
+    menu_item_select = New(simple_menu, 'Select Item', menu_items)
     New(mask_fader, 'open')
-    menu.FlyIn(menu_player_select, 'right')
+    menu.FlyIn(menu_item_select, 'right')
 end
 function stage_init:render()
     ui.DrawMenuBG()
@@ -65,6 +69,12 @@ stage.group.DefStageFunc('SC Debugger@SC Debugger', 'init', function(self)
             end
         end
 
+        BossExists = false
+        lstg.var.battlefinish = false
+        lstg.var.killtime = 0
+        last=New(_editor_class["UI_Info"],self.x,self.y,_)
+        last=New(_editor_class["Item_Handler"],self.x,self.y,_)
+
         --local _boss_wait=true local _ref=New(_editor_class[_boss_class_name],_editor_class[_boss_class_name].cards) last=_ref
         --by OLC，提供符卡debug时执行前一个动作支持
         local debug_boss = _editor_class[_boss_class_name]
@@ -75,7 +85,7 @@ stage.group.DefStageFunc('SC Debugger@SC Debugger', 'init', function(self)
             if cur_card.perform and debug_boss.cards[index - 1] then
                 table.insert(cards, debug_boss.cards[index - 1])
             else
-                table.insert(cards, boss.move.New(0, 144, 60, MOVE_DECEL))
+                --table.insert(cards, boss.move.New(0, 144, 60, MOVE_DECEL))
             end
             table.insert(cards, cur_card)
         else

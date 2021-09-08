@@ -623,13 +623,13 @@ function kill_timer:render()
     local alpha = self.alph
     --略修改位置，小数点后位缩小
     local basex = 54
-    SetFontState("time", "", Color(alpha * 255, 0, 0, 0))
-    RenderText("time", string.format("%d.", int(self.t / 60)), basex - 1, self.y, 0.5, "vcenter", "right")
-    RenderText("time", string.format("%02ds", int(self.t / 60 * 100 % 100)), basex - 1, self.y - 1, 0.3, "vcenter", "left")
+    SetFontState("sc_time", "", Color(alpha * 255, 0, 0, 0))
+    RenderText("sc_time", string.format("%d.", int(self.t / 60)), basex - 1, self.y, 0.5, "vcenter", "right")
+    RenderText("sc_time", string.format("%02ds", int(self.t / 60 * 100 % 100)), basex - 1, self.y - 1, 0.3, "vcenter", "left")
 
-    SetFontState("time", "", Color(alpha * 255, 200, 200, 200))
-    RenderText("time", string.format("%d.", int(self.t / 60)), basex, self.y + 1, 0.5, "vcenter", "right")
-    RenderText("time", string.format("%02ds", int(self.t / 60 * 100 % 100)), basex, self.y, 0.3, "vcenter", "left")
+    SetFontState("sc_time", "", Color(alpha * 255, 200, 200, 200))
+    RenderText("sc_time", string.format("%d.", int(self.t / 60)), basex, self.y + 1, 0.5, "vcenter", "right")
+    RenderText("sc_time", string.format("%02ds", int(self.t / 60 * 100 % 100)), basex, self.y, 0.3, "vcenter", "left")
 
     SetImageState("hint.killtimer", "", Color(alpha * 255, 255, 255, 255))
     Render("hint.killtimer", -39, self.y + 2, 0.5, 0.5)
@@ -662,12 +662,12 @@ function kill_timer2:render()
     local alpha = self.alph
     --略修改位置，小数点后位缩小
     local basex = 54
-    SetFontState("time", "", Color(alpha * 255, 0, 0, 0))
-    RenderText("time", string.format("%d.", int(self.t / 60)), basex - 1, self.y, 0.5, "vcenter", "right")
-    RenderText("time", string.format("%02ds", int(self.t / 60 * 100 % 100)), basex - 1, self.y - 1, 0.3, "vcenter", "left")
-    SetFontState("time", "", Color(alpha * 255, 127, 127, 127))
-    RenderText("time", string.format("%d.", int(self.t / 60)), basex, self.y + 1, 0.5, "vcenter", "right")
-    RenderText("time", string.format("%02ds", int(self.t / 60 * 100 % 100)), basex, self.y, 0.3, "vcenter", "left")
+    SetFontState("sc_time", "", Color(alpha * 255, 0, 0, 0))
+    RenderText("sc_time", string.format("%d.", int(self.t / 60)), basex - 1, self.y, 0.5, "vcenter", "right")
+    RenderText("sc_time", string.format("%02ds", int(self.t / 60 * 100 % 100)), basex - 1, self.y - 1, 0.3, "vcenter", "left")
+    SetFontState("sc_time", "", Color(alpha * 255, 127, 127, 127))
+    RenderText("sc_time", string.format("%d.", int(self.t / 60)), basex, self.y + 1, 0.5, "vcenter", "right")
+    RenderText("sc_time", string.format("%02ds", int(self.t / 60 * 100 % 100)), basex, self.y, 0.3, "vcenter", "left")
     SetImageState("hint.truetimer", "", Color(alpha * 255, 255, 255, 255))
     Render("hint.truetimer", -39, self.y + 2, 0.5, 0.5)
 end

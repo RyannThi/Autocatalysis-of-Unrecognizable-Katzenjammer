@@ -1,41 +1,31 @@
 {
 	"repsaver": "BOO",
 	"quest_1": false,
+	"dialog_one": true,
 	"quest_2": true,
 	"tutoriallock": false,
-	"difficulty_select": 2,
-	"player_select": 5,
 	"hiscore": {
 		"1@Act1@Sanae_Kochiya": 1415530,
 		"1@Act1-1@Sanae_Kochiya": 2004820,
-		"SC Debugger@SC Debugger@reimu_player": 1120,
+		"SC Debugger@SC Debugger@reimu_player": 1780240,
 		"SpellCard@SpellCard@Sanae_Kochiya": 0,
 		"Title@AoUKGame@Sanae_Kochiya": 0,
-		"SC Debugger@SC Debugger@Sanae_Kochiya": 6460,
+		"SC Debugger@SC Debugger@Sanae_Kochiya": 2210210,
 		"SpellCard@SpellCard@reimu_player": 0,
 		"1@Tutorial@Sanae_Kochiya": 1209999998790,
-		"1@Act1-2@Sanae_Kochiya": 1778500
+		"1@Act1-2@Sanae_Kochiya": 1919290
 	},
+	"player_select": 5,
+	"itemsel": 6,
+	"difficulty_select": 2,
 	"quest_3": true,
 	"mp": 145,
 	"spell_card_hist": {
 		"All": {
-			"asddsa": {
-				"Sanae_Kochiya": [
-					0,
-					19
-				]
-			},
-			"asddas\\nfdasf": {
-				"reimu_player": [
-					0,
-					1
-				]
-			},
 			"Pathogen Annihilation \"Two Steps in the Afternoon\"": {
 				"Sanae_Kochiya": [
-					12,
-					81
+					19,
+					110
 				]
 			},
 			"asddas": {
@@ -54,12 +44,56 @@
 			},
 			"「」": {
 				"Sanae_Kochiya": [
-					61,
-					206
+					64,
+					212
 				],
 				"reimu_player": [
 					0,
 					2
+				]
+			},
+			"asddsa": {
+				"Sanae_Kochiya": [
+					0,
+					19
+				]
+			},
+			"adsdkaSHDLKJAHSDNZBNXMDFAKJSBFJAHSBFJZB LKXZ BFAJBS KFJQBFBZXNFQHLB JKXZLFBIQB": {
+				"Sanae_Kochiya": [
+					0,
+					1
+				],
+				"reimu_player": [
+					0,
+					1
+				]
+			},
+			"asddas\\nfdasf": {
+				"reimu_player": [
+					0,
+					1
+				]
+			},
+			"[===[mfw\\nmfw ]===]": {
+				"reimu_player": [
+					2,
+					10
+				],
+				"Sanae_Kochiya": [
+					4,
+					56
+				]
+			},
+			"Ellipse Requiem \"Simple Contingent Obliteration\"": {
+				"Sanae_Kochiya": [
+					5,
+					33
+				]
+			},
+			"adsdkaSHDLKJAHSDNZBNXMDFAKJSBFJAHSBFJZB LKXZ BFAJBS\\n KFJQBFBZXNFQHLB JKXZLFBIQB": {
+				"reimu_player": [
+					0,
+					1
 				]
 			},
 			"asda": {

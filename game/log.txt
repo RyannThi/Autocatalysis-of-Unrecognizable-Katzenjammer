@@ -1339,9 +1339,9 @@
 [INFO]  装载脚本'THlib\UI\UI.lua'
 [INFO]  装载脚本'THlib\UI\uiconfig.lua'
 [INFO]  装载脚本'THlib\UI\font.lua'
-[INFO]  字形缓存数量：1760，字形缓存贴图大小：1024x1024
+[INFO]  字形缓存数量：1225，字形缓存贴图大小：1024x1024
 [INFO]  LoadTTFFont: truetype字体'boss_name'已装载 (全局资源池)
-[INFO]  字形缓存数量：117，字形缓存贴图大小：1024x1024
+[INFO]  字形缓存数量：900，字形缓存贴图大小：1024x1024
 [INFO]  LoadTTFFont: truetype字体'sc_name'已装载 (全局资源池)
 [INFO]  字形缓存数量：868，字形缓存贴图大小：1024x1024
 [INFO]  LoadTTFFont: truetype字体'sc_pr'已装载 (全局资源池)
@@ -1357,6 +1357,7 @@
 [INFO]  LoadFont: 纹理字体'score2'已装载 (全局资源池)
 [INFO]  LoadFont: 纹理字体'score3'已装载 (全局资源池)
 [INFO]  LoadFont: 纹理字体'time'已装载 (全局资源池)
+[INFO]  LoadFont: 纹理字体'sc_time'已装载 (全局资源池)
 [INFO]  LoadFont: 纹理字体'replay'已装载 (全局资源池)
 [INFO]  装载脚本'THlib\UI\title.lua'
 [INFO]  装载脚本'THlib\UI\sc_pr.lua'
@@ -1520,6 +1521,12 @@
 [INFO]  LoadImage: 图像'image:Sanae_Frog'已装载 (全局资源池)
 [INFO]  LoadTexture: 纹理'PLAYER\Sanae_Frog_Ex.png'已装载 -> 'ani:Sanae_Frog_Ex' (全局资源池)
 [INFO]  LoadAnimation: 动画'ani:Sanae_Frog_Ex'已装载 (全局资源池)
+[INFO]  LoadTexture: 纹理'SC_BACKGROUNDS\BG_Isaki_1.png'已装载 -> 'image:BG_Isaki_1' (全局资源池)
+[INFO]  LoadImage: 图像'image:BG_Isaki_1'已装载 (全局资源池)
+[INFO]  LoadTexture: 纹理'SC_BACKGROUNDS\BG_Isaki_2.png'已装载 -> 'image:BG_Isaki_2' (全局资源池)
+[INFO]  LoadImage: 图像'image:BG_Isaki_2'已装载 (全局资源池)
+[INFO]  LoadTexture: 纹理'SC_BACKGROUNDS\BG_Isaki_3.png'已装载 -> 'image:BG_Isaki_3' (全局资源池)
+[INFO]  LoadImage: 图像'image:BG_Isaki_3'已装载 (全局资源池)
 [INFO]  LoadTexture: 纹理'UI\UI_Overlay.png'已装载 -> 'image:UI_Overlay' (全局资源池)
 [INFO]  LoadImage: 图像'image:UI_Overlay'已装载 (全局资源池)
 [INFO]  LoadTexture: 纹理'UI\Quest_Completed.png'已装载 -> 'image:Quest_Completed' (全局资源池)
@@ -1581,6 +1588,22 @@
 [INFO]  LoadImage: 图像'temple_ground'已装载 (关卡资源池)
 [INFO]  LoadTexture: 纹理'THlib\background\temple\pillar.png'已装载 -> 'temple_pillar' (关卡资源池)
 [INFO]  LoadImage: 图像'temple_pillar'已装载 (关卡资源池)
+[INFO]  LoadTexture: 纹理'Isaki_Small_Boss.png'已装载 -> 'anonymous:Isaki_Small_Boss.png' (关卡资源池)
+[INFO]  LoadImage: 图像'anonymous:Isaki_Small_Boss.png11'已装载 (关卡资源池)
+[INFO]  LoadImage: 图像'anonymous:Isaki_Small_Boss.png12'已装载 (关卡资源池)
+[INFO]  LoadImage: 图像'anonymous:Isaki_Small_Boss.png13'已装载 (关卡资源池)
+[INFO]  LoadImage: 图像'anonymous:Isaki_Small_Boss.png14'已装载 (关卡资源池)
+[INFO]  LoadImage: 图像'anonymous:Isaki_Small_Boss.png21'已装载 (关卡资源池)
+[INFO]  LoadImage: 图像'anonymous:Isaki_Small_Boss.png22'已装载 (关卡资源池)
+[INFO]  LoadImage: 图像'anonymous:Isaki_Small_Boss.png23'已装载 (关卡资源池)
+[INFO]  LoadImage: 图像'anonymous:Isaki_Small_Boss.png24'已装载 (关卡资源池)
+[INFO]  LoadImage: 图像'anonymous:Isaki_Small_Boss.png31'已装载 (关卡资源池)
+[INFO]  LoadImage: 图像'anonymous:Isaki_Small_Boss.png32'已装载 (关卡资源池)
+[INFO]  LoadImage: 图像'anonymous:Isaki_Small_Boss.png33'已装载 (关卡资源池)
+[INFO]  LoadImage: 图像'anonymous:Isaki_Small_Boss.png34'已装载 (关卡资源池)
+[INFO]  脚本日志：Set	none	menu	nil
+[INFO]  关卡资源池已清空
+[INFO]  LoadMusic: BGM'bgm:TitleTrack'已装载 (关卡资源池)
 [INFO]  结束游戏循环
 [INFO]  已清空对象池
 [INFO]  已清空所有资源

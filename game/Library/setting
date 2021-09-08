@@ -6,7 +6,7 @@
 		"snapshot": 36,
 		"retry": 82
 	},
-	"resx": 1280,
+	"bgmvolume": 100,
 	"keys": {
 		"right": 39,
 		"left": 37,
@@ -19,7 +19,7 @@
 	},
 	"timezone": 8,
 	"nosplash": true,
-	"bgmvolume": 100,
+	"windowed": true,
 	"res": 1,
 	"allowsnapshot": true,
 	"resy": 720,
@@ -38,5 +38,5 @@
 	},
 	"username": "User",
 	"sevolume": 100,
-	"windowed": true
+	"resx": 1280
 }

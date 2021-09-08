@@ -6,7 +6,7 @@ Include "THlib\\UI\\sc_pr.lua"
 ui = {}
 
 LoadTexture("boss_ui", "THlib\\UI\\boss_ui.png")
-LoadImage("boss_spell_name_bg", "boss_ui", 0, 0, 256, 36)
+LoadImage("boss_spell_name_bg", "boss_ui", 0, 0, 256, 54)
 SetImageCenter("boss_spell_name_bg", 256, 0)
 
 LoadImage("boss_pointer", "boss_ui", 0, 64, 48, 16)
