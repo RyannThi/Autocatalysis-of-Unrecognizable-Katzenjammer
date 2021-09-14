@@ -1,107 +1,40 @@
 {
-	"repsaver": "BOO",
-	"quest_1": false,
-	"dialog_one": true,
-	"quest_2": true,
+	"repsaver": "A__",
 	"tutoriallock": false,
+	"quest_5": true,
+	"item_available_3": false,
+	"itemsel": 5,
+	"item_available_2": true,
+	"quest_3": false,
+	"mp": 26,
 	"hiscore": {
-		"1@Act1@Sanae_Kochiya": 1415530,
-		"1@Act1-1@Sanae_Kochiya": 2004820,
-		"SC Debugger@SC Debugger@reimu_player": 1780240,
-		"SpellCard@SpellCard@Sanae_Kochiya": 0,
-		"Title@AoUKGame@Sanae_Kochiya": 0,
-		"SC Debugger@SC Debugger@Sanae_Kochiya": 2210210,
-		"SpellCard@SpellCard@reimu_player": 0,
-		"1@Tutorial@Sanae_Kochiya": 1209999998790,
-		"1@Act1-2@Sanae_Kochiya": 1919290
+		"1@Tutorial@Sanae_Kochiya": 146420,
+		"1@Act1-1@Sanae_Kochiya": 1892560
 	},
-	"player_select": 5,
-	"itemsel": 6,
-	"difficulty_select": 2,
-	"quest_3": true,
-	"mp": 145,
+	"item_available_7": false,
+	"quest_4": false,
+	"dialog_one": true,
+	"quest_2": false,
 	"spell_card_hist": {
 		"All": {
+			"\"Prismatic Phantasm Phenomenon\"": {
+				"Sanae_Kochiya": [
+					0,
+					1
+				]
+			},
 			"Pathogen Annihilation \"Two Steps in the Afternoon\"": {
 				"Sanae_Kochiya": [
-					19,
-					110
-				]
-			},
-			"asddas": {
-				"reimu_player": [
-					0,
-					6
-				],
-				"marisa_player": [
-					0,
-					1
-				],
-				"Sanae_Kochiya": [
-					0,
-					4
-				]
-			},
-			"「」": {
-				"Sanae_Kochiya": [
-					64,
-					212
-				],
-				"reimu_player": [
-					0,
-					2
-				]
-			},
-			"asddsa": {
-				"Sanae_Kochiya": [
-					0,
-					19
-				]
-			},
-			"adsdkaSHDLKJAHSDNZBNXMDFAKJSBFJAHSBFJZB LKXZ BFAJBS KFJQBFBZXNFQHLB JKXZLFBIQB": {
-				"Sanae_Kochiya": [
-					0,
-					1
-				],
-				"reimu_player": [
-					0,
-					1
-				]
-			},
-			"asddas\\nfdasf": {
-				"reimu_player": [
-					0,
-					1
-				]
-			},
-			"[===[mfw\\nmfw ]===]": {
-				"reimu_player": [
-					2,
-					10
-				],
-				"Sanae_Kochiya": [
-					4,
-					56
-				]
-			},
-			"Ellipse Requiem \"Simple Contingent Obliteration\"": {
-				"Sanae_Kochiya": [
-					5,
-					33
-				]
-			},
-			"adsdkaSHDLKJAHSDNZBNXMDFAKJSBFJAHSBFJZB LKXZ BFAJBS\\n KFJQBFBZXNFQHLB JKXZLFBIQB": {
-				"reimu_player": [
-					0,
-					1
-				]
-			},
-			"asda": {
-				"Sanae_Kochiya": [
-					0,
-					1
+					8,
+					11
 				]
 			}
 		}
-	}
+	},
+	"quest_1": false,
+	"item_available_1": true,
+	"act1_1_cleartimes": 9,
+	"item_available_5": true,
+	"item_available_6": false,
+	"item_available_4": true
 }

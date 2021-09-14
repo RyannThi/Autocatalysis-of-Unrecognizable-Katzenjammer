@@ -174,7 +174,16 @@ function ext.pausemenu:render()
     SetImageState('white', '', pm.mask_color)
     RenderRect('white', 0, screen.width, 0, screen.height)
     --渲染底图
-    SetImageState('pause_eff', '', Color(pm.mask_alph[1] / 3, 200 * self.eff / 15 + 55, 200 * (1 - self.eff / 15) + 55, 200 * (1 - self.eff / 15) + 55))
+    --SetImageState('pause_eff', '', Color(pm.mask_alph[1] / 3,
+    --        200 * self.eff / 15 + 55,
+    --        200 * (1 - self.eff / 15) + 55,
+    --        200 * (1 - self.eff / 15) + 55)
+    --)
+    SetImageState('pause_eff', '', Color(pm.mask_alph[1] / 3,
+            200 * (1 - self.eff / 15) + 55,
+            115 * self.eff / 15 + 60,
+            0 * self.eff / 15 + 0)
+    )
     Render('pause_eff', -150 + 180 * self.eff / 15 + dx, -90 + dy, 4 + 4 * sin(self.timer * 3), 0.4, 0.6)
     --准备选项
     local pause_menu_text
@@ -230,7 +239,7 @@ function ext.pausemenu:render()
         for i = 1, textnumber do
             if not (self.choose) then
                 if i == self.pos and pm.mask_alph[i] + 15 >= 245 then
-                    SetImageState('pause_' .. pause_menu_text[i], '', Color(pm.mask_alph[i] + 15, 155 + 100 * sin(self.timer * 4.5), 255, 222))
+                    SetImageState('pause_' .. pause_menu_text[i], '', Color(pm.mask_alph[i] + 15, 255, 195 + 60 * sin(self.timer * 4.5), 155 + 100 * sin(self.timer * 4.5)))
                 else
                     SetImageState('pause_' .. pause_menu_text[i], '', Color(pm.mask_alph[i] + 15, 100, 100, 100))
                 end
@@ -249,7 +258,7 @@ function ext.pausemenu:render()
         Render('pause_really', 0 + dx, -50 + dy, 0, 0.62, 0.62)
         for i = 1, 2 do
             if i == self.pos2 then
-                SetImageState('pause_' .. pause_menu_choose[i], '', Color(pm.mask_alph[i] + 15, 155 + 100 * sin(self.timer * 4.5), 255, 255))
+                SetImageState('pause_' .. pause_menu_choose[i], '', Color(pm.mask_alph[i] + 15, 255, 195 + 60 * sin(self.timer * 4.5), 155 + 100 * sin(self.timer * 4.5)))
             else
                 SetImageState('pause_' .. pause_menu_choose[i], '', Color(pm.mask_alph[i] + 15, 100, 100, 100))
             end

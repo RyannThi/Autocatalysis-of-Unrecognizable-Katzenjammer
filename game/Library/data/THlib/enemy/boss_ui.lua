@@ -786,23 +786,23 @@ function timeCounter:render()
         local scale1 = self.scale
         local scale2 = scale1 * 0.6
         if cd1 >= self.t1 then
-            SetFontState("time", "", Color(alpha1 * 255, 255, 255, 255))
+            SetFontState("sc_time", "", Color(alpha1 * 255, 255, 255, 255))
         elseif cd1 >= self.t2 then
-            SetFontState("time", "", Color(alpha1 * 255, 255, 144, 144))
+            SetFontState("sc_time", "", Color(alpha1 * 255, 255, 144, 144))
         else
-            SetFontState("time", "", Color(alpha1 * 255, 255, 48, 48))
+            SetFontState("sc_time", "", Color(alpha1 * 255, 255, 48, 48))
         end
         if self.cd1 >= 99.99 and b.__disallow_100sec then
             cd1 = 99
             cd2 = 99
         end
         if cd1 >= self.t1 then
-            RenderText("sc_time", string.format("%2d", int(cd1)) .. ".", x, y1 - 8, scale1, "vcenter", "right")
-            RenderText("sc_time", string.format("%d%d", min(9, cd2 / 10), min(9, cd2 % 10)), x, y2 - 8, scale2, "vcenter", "left")
+            RenderText("sc_time", string.format("%2d", int(cd1)) .. ".", x, y1 - 10, scale1, "vcenter", "right")
+            RenderText("sc_time", string.format("%d%d", min(9, cd2 / 10), min(9, cd2 % 10)), x, y2 - 10, scale2, "vcenter", "left")
         else
-            RenderText("sc_time", string.format("0%d", min(99.99, int(cd1))) .. " ", x, y1 - 8, scale1 * scalew, "vcenter", "right")
+            RenderText("sc_time", string.format("0%d", min(99.99, int(cd1))) .. " ", x, y1 - 10, scale1 * scalew, "vcenter", "right")
             RenderText("sc_time", ".", x, y1, scale1, "vcenter", "right")
-            RenderText("sc_time", string.format("%d%d", min(9, cd2 / 10), min(9, cd2 % 10)), x, y2 - 8, scale2, "vcenter", "left")
+            RenderText("sc_time", string.format("%d%d", min(9, cd2 / 10), min(9, cd2 % 10)), x, y2 - 10, scale2, "vcenter", "left")
         end
     end
 end
@@ -914,10 +914,10 @@ function infobar:render()
         local x, y = self.x, self.y - dy
         local anisc = int(self.t / self.mt)
         local sc_left = self.sc_left + anisc
-        RenderTTF('boss_name', b.name, x, x, y, y, Color(0xFF000000), "noclip")
+        RenderTTF('boss_name', b.name, x, x, y-3, y-3, Color(0xFF000000), "noclip")
         x = x - 1
         y = y + 1
-        RenderTTF('boss_name', b.name, x, x, y, y, Color(0xFF80FF80), "noclip")
+        RenderTTF('boss_name', b.name, x, x, y-3, y-3, Color(0xFF80FF80), "noclip")
         local m = int((sc_left - 1) / 8)
         local m2 = sc_left - 1 - 8 * m
         x = self.x - 9
@@ -1459,14 +1459,14 @@ function sc_name:render()
             --沙雕描边
             _x = x + d * cos(i * 45)
             _y = y + d * sin(i * 45)
-            RenderTTF("sc_name", lstg.var.spell_text or self.name,
+            RenderTTFSC("sc_name", lstg.var.spell_text or self.name,
                     _x, _x, _y - 7, _y - 7,
-                    Color(alpha2 * 255, 0, 0, 0),
+                    Color(alpha2 * 255, 0, 0, 0), lstg.var.spell_size or 1,
                     "right", "noclip")
         end
-        RenderTTF("sc_name", lstg.var.spell_text or self.name,
+        RenderTTFSC("sc_name", lstg.var.spell_text or self.name,
                 x, x, y - 7, y - 7,
-                Color(alpha2 * 255, 255, 255, 255),
+                Color(alpha2 * 255, 255, 255, 255), lstg.var.spell_size or 1,
                 "right", "noclip")
     end
 end

@@ -386,7 +386,7 @@ function system:spell()
     if p.class.spell then
         p.class.spell(p)
     end
-    p.death = 0
+    --p.death = 0
     p.nextcollect = 90
 end
 

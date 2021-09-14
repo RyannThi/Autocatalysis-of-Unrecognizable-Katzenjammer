@@ -532,6 +532,7 @@ function replay_saver:render()
         -- 标题
         SetFontState("replay", "", Color(255, unpack(ui.menu.title_color)))
         RenderText("replay", self.state2UserName, self.x, self.y - 5.5 * ui.menu.line_height, ui.menu.font_size, "centerpoint")
+        RenderText("replay", "Replays are unstable. Opt to record your runs live.", self.x, self.y - -400, ui.menu.font_size, "centerpoint")
     end
 end
 ----------------------------------------------------------------------------
@@ -660,6 +661,7 @@ function replay_loader:render()
                 self.shakeValue,
                 "center")
     end
+    RenderText("replay", "Replays are unstable. Opt to record your runs live.", self.x, self.y - -400, ui.menu.font_size, "centerpoint")
 end
 --------------------------------------------------------------------------------------------
 

@@ -81,7 +81,7 @@ function stage.group.frame(self)
             ext.rep_over = true
             lstg.tmpvar.pause_menu_text = { 'Replay Again', 'Return to Title', nil }
         else
-            PlayMusic(deathmusic, 0.8)
+            --PlayMusic(deathmusic, 0.8)
             ext.pop_pause_menu = true
             lstg.tmpvar.death = true
             lstg.tmpvar.pause_menu_text = { 'Continue', 'Quit and Save Replay', 'Restart' }
@@ -91,10 +91,12 @@ function stage.group.frame(self)
     --
     if ext.GetPauseMenuOrder() == 'Return to Title' then
         lstg.var.timeslow = nil
+        --_stop_music()
         stage.group.ReturnToTitle(false, 0)
     end
     if ext.GetPauseMenuOrder() == 'Replay Again' then
         lstg.var.timeslow = nil
+        --_stop_music()
         stage.Restart()
     end
     if ext.GetPauseMenuOrder() == 'Give up and Retry' then
@@ -116,13 +118,14 @@ function stage.group.frame(self)
         end
     end
     if ext.GetPauseMenuOrder() == 'Quit and Save Replay' then
+        --_stop_music()
         stage.group.ReturnToTitle(true, 0)
         lstg.tmpvar.pause_menu_text = nil
         lstg.tmpvar.death = true
         lstg.var.timeslow = nil
     end
     if ext.GetPauseMenuOrder() == 'Restart' then
-        StopMusic(deathmusic)
+        --StopMusic(deathmusic)
         if lstg.var.is_practice then
             stage.group.PracticeStart(self.name)
         else
