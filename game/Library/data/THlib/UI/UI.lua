@@ -340,10 +340,10 @@ function lstg_ui:drawFrame1()
     else
         --Render("logo", -16 + w.scrr, 150, 0, 0.5, 0.5)
     end
-    SetFontState("menu", "", Color(0xFFFFFFFF))
-    RenderText("menu",
+    SetFontState("xyz_n_font", "", Color(0xFFFFFFFF))
+    RenderText("xyz_n_font",
             string.format("%.1ffps", GetFPS()),
-            220 + w.scrr, 1, 0.25, "right", "bottom")
+            220+12 + w.scrr, 1, 0.35, "right", "bottom")
     SetViewMode "world"
 end
 function lstg_ui:drawFrame2()
@@ -357,19 +357,19 @@ end
 function lstg_ui:drawMenuBG1()
     SetViewMode "ui"
     Render("menu_bg", (screen.width/2)+1, 240)
-    SetFontState("menu", "", Color(0xFFFFFFFF))
-    RenderText("menu",
+    SetFontState("xyz_n_font", "", Color(0xFFFFFFFF))
+    RenderText("xyz_n_font",
             string.format("%.1ffps", GetFPS()),
-            636, 1, 0.25, "right", "bottom")
+            636+12, 1, 0.35, "right", "bottom")
     SetViewMode "world"
 end
 function lstg_ui:drawMenuBG2()
     SetViewMode "ui"
     Render("menu_bg2", 198, 264)
-    SetFontState("menu", "", Color(0xFFFFFFFF))
-    RenderText("menu",
+    SetFontState("xyz_n_font", "", Color(0xFFFFFFFF))
+    RenderText("xyz_n_font",
             string.format("%.1ffps", GetFPS()),
-            392, 1, 0.25, "right", "bottom")
+            392+12, 1, 0.35, "right", "bottom")
     SetViewMode "world"
 end
 function lstg_ui:ScoreUpdate()

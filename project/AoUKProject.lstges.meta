@@ -1,8 +1,14 @@
+ca3655b160817741a5df6d4c738e97f3|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Lua\easing.lua|easing.lua
 8f3757daf51ae9033b4232fb8af05619|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\BGM\TutorialTrack.ogg|BGM\TutorialTrack.ogg
 a92784c0ca256c74df7854d932015959|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\BGM\TitleTrack.ogg|BGM\TitleTrack.ogg
-ff132c0d20b2c5127028c59de2d4b2c2|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\BGM\Act2Track.ogg|BGM\Act2Track.ogg
 4b72ddb668e5a62671684a2dfc498098|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\BGM\Act3Track.ogg|BGM\Act3Track.ogg
-e45df51d755830af16c5f5d90711801f|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Shader\world_rotate.fx|world_rotate.fx
+e45df51d755830af16c5f5d90711801f|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Shader\world_rotate.fx|SHADER\world_rotate.fx
+9032fa33ae6e63b6756e15d5d98bcb2e|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Shader\liquid_warp.fx|SHADER\liquid_warp.fx
+298e4996c4ca45ea252fa1ab9d975ea9|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Shader\texture_mask.fx|SHADER\texture_mask.fx
+a52bb0f8c77bd6214fced3dcc4743c3e|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Shader\texture_overlay.fx|SHADER\texture_overlay.fx
+60b915f62677780025b5e77ea2e6b7ad|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Shader\texture_threshold.fx|SHADER\texture_threshold.fx
+561134403536798754dc3ea347dd212c|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Shader\texture_hue.fx|SHADER\texture_hue.fx
+1e1e2c25ca012ce0a2e80819099b123d|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Sprites\Crispy_Texture.png|SHADER\Crispy_Texture.png
 b39cff8c6211012d09506095d06ab594|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Fonts\xyz_font.fnt|font\xyz_font.fnt
 11566f823bcbaee51ceede9f2422879a|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Fonts\xyz_font.png|font\xyz_font.png
 d0a718ac5e59f151bf7d00d6711e3373|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\menu_bg.png|TITLE\menu_bg.png
@@ -40,6 +46,19 @@ e6dcfb8e967adbaba4f51e67b2536698|C:\Users\user\Documents\Autocatalysis-of-Unreco
 028033d811d45888d75817c0dd095a22|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Yukari\Yukari_6.png|PORTRAITS\YUKARI\Yukari_6.png
 127d64eab5b3a45db3ca8b5b637f50c4|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Yukari\Yukari_Cutin.png|PORTRAITS\YUKARI\Yukari_Cutin.png
 173942524c2a2f44d601d51b7f46a3f5|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Isaki\Isaki_Cutin.png|PORTRAITS\ISAKI\Isaki_Cutin.png
+095bebbd25991a7acbd5d0335db37228|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Sibele\Sibele_1.png|PORTRAITS\SIBELE\Sibele_1.png
+11a7fed45501efa696c0adb4317c029d|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Sibele\Sibele_2.png|PORTRAITS\SIBELE\Sibele_2.png
+b8bca157b4964a85743da6592dcaf23c|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Sibele\Sibele_3.png|PORTRAITS\SIBELE\Sibele_3.png
+ad8abd29890c70851f87398aa0ab0e1a|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Sibele\Sibele_4.png|PORTRAITS\SIBELE\Sibele_4.png
+d7dafd0d3b75055568f972b2593fe2e2|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Sibele\Sibele_Cutin.png|PORTRAITS\SIBELE\Sibele_Cutin.png
+9d2985df02f9d67e0931ff9f11b5b394|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Virilia\Virilia_1.png|PORTRAITS\VIRILIA\Virilia_1.png
+e0d572fbf827f0c7cccebe66d8a7415d|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Virilia\Virilia_2.png|PORTRAITS\VIRILIA\Virilia_2.png
+c5187a8de5f8ba2aab5958a78d64442e|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Virilia\Virilia_3.png|PORTRAITS\VIRILIA\Virilia_3.png
+d0ad2c96b33592b287ba8f0cdd0a30b1|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Virilia\Virilia_4.png|PORTRAITS\VIRILIA\Virilia_4.png
+54e1fed3967de365753dbfb22e090ca0|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Virilia\Virilia_5.png|PORTRAITS\VIRILIA\Virilia_5.png
+2c720894a38d05278a581ab365772185|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Virilia\Virilia_Cutin.png|PORTRAITS\VIRILIA\Virilia_Cutin.png
+88b7e6c0f3666a294e2970f6e9854cc1|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Sibilia\Sibilia_Cutin.png|PORTRAITS\SIBILIA\Sibilia_Cutin.png
+032d18650e923c383178d8f83a9686e6|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Portraits\Tsukasa\Tsukasa_1.png|PORTRAITS\TSUKASA\Tsukasa_1.png
 423e896d117b51dd7bab8d5fa3980627|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Sprites\Sanae_Shot.png|PLAYER\Sanae_Shot.png
 0786beedcb2ed9932ac3d92df94b18ed|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Sprites\Sanae_Snake.png|PLAYER\Sanae_Snake.png
 0786beedcb2ed9932ac3d92df94b18ed|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Sprites\Sanae_Snake_K.png|PLAYER\Sanae_Snake_K.png
@@ -53,7 +72,14 @@ d3293520a00c54bb2ab86328415f9f55|C:\Users\user\Documents\Autocatalysis-of-Unreco
 971dfde52ba8876a7e05f48b7bd9354f|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\SC Backgrounds\BG_Isaki_1.png|SC_BACKGROUNDS\BG_Isaki_1.png
 f9f51df2697357e7bc047a3f5536e3a4|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\SC Backgrounds\BG_Isaki_2.png|SC_BACKGROUNDS\BG_Isaki_2.png
 c7af19b7d0eb92bdee6bd5f249c58d81|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\SC Backgrounds\BG_Isaki_3.png|SC_BACKGROUNDS\BG_Isaki_3.png
+e8bdff8db076431a2f4b4f92706f8b9c|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\SC Backgrounds\BG_Sibele_1.png|SC_BACKGROUNDS\BG_Sibele_1.png
+ef3eba6afa510bcf3d37bd1f8840cd5d|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\SC Backgrounds\BG_Sibele_2.png|SC_BACKGROUNDS\BG_Sibele_2.png
+b807190f4154646f0025aac6a2994d6f|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\SC Backgrounds\BG_Virilia_1.png|SC_BACKGROUNDS\BG_Virilia_1.png
+4b3a92414ef175cfeb5b1b8545bc2b58|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\SC Backgrounds\BG_Virilia_2.png|SC_BACKGROUNDS\BG_Virilia_2.png
+cf7c2cb29fdea6eebaf5ce3b339202bd|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\SC Backgrounds\BG_Virilia_3.png|SC_BACKGROUNDS\BG_Virilia_3.png
+85762f63f928800b198c64f08f5f8c35|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Scene_Preview\SPreview_2_4.png|SC_BACKGROUNDS\SPreview_2_4.png
 1173e06331dc5fd8a705dfbf4f3c36e3|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Sprites\Yukari_Gap.png|SHOTS\Yukari_Gap.png
+40524e41f1d27100c9e2a3071be85d0e|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Sprites\Treasure_Chest.png|SHOTS\Treasure_Chest.png
 d550896a8d909cb34169aaef3191fb1f|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Misc\UI_Overlay.png|UI\UI_Overlay.png
 249c9e507bd846c271e9008a24380f5b|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Misc\Quest_Completed.png|UI\Quest_Completed.png
 6cef9f0a6c03fd8378fcf9da925d5f8b|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Misc\Shop_Owned.png|UI\Shop_Owned.png
@@ -70,11 +96,32 @@ aeb3c0cc1513d18317af70bf6e6e73e3|C:\Users\user\Documents\Autocatalysis-of-Unreco
 8f8cf97729b098ee05e6aa1414b82730|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Items\Reverse_Amulet.png|ITEMS\Reverse_Amulet.png
 458510bbdf6ee11edbcb0a86a388f58b|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Scene_Preview\SPreview_0.png|ITEMS\SPreview_0.png
 18f6f9a90be561b81f0098a502cdf75e|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Scene_Preview\SPreview_1_1.png|ITEMS\SPreview_1_1.png
+c09f0df3a5ee9bf4cad9459e08f48bdc|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Scene_Preview\SPreview_1_2.png|ITEMS\SPreview_1_2.png
+1a18cfc01f89bc7cc715fc55a8f767ed|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Scene_Preview\SPreview_1_3.png|ITEMS\SPreview_1_3.png
+b4a9d498b04b22da09db433e3dd625bd|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Scene_Preview\SPreview_1_4.png|ITEMS\SPreview_1_4.png
+85762f63f928800b198c64f08f5f8c35|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Scene_Preview\SPreview_2_1.png|ITEMS\SPreview_2_1.png
+85762f63f928800b198c64f08f5f8c35|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Scene_Preview\SPreview_2_2.png|ITEMS\SPreview_2_2.png
+85762f63f928800b198c64f08f5f8c35|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Scene_Preview\SPreview_2_3.png|ITEMS\SPreview_2_3.png
 2e105e87fc4a0aced2130f7a7e3e11d3|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Char_Title_Slate.png|CHAR_TITLES\Char_Title_Slate.png
 de591e81c3e988071d4a9a95e7be8fb9|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Isaki\Char_Name_Isaki.png|CHAR_TITLES\ISAKI\Char_Name_Isaki.png
 43127726d618df5e34790fc70a2052e6|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Isaki\Char_Title_Isaki_1.png|CHAR_TITLES\ISAKI\Char_Title_Isaki_1.png
 e8927bc9a0b9782063e0f881b2fab5b9|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Isaki\Char_Title_Isaki_2.png|CHAR_TITLES\ISAKI\Char_Title_Isaki_2.png
 eba91e500b44e6863cc14982515999dd|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Isaki\Char_Title_Isaki_3.png|CHAR_TITLES\ISAKI\Char_Title_Isaki_3.png
+ac68a1fff3a237a7a0405f21c58c57b7|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Sibele\Char_Name_Sibele.png|CHAR_TITLES\SIBELE\Char_Name_Sibele.png
+d1407f3c23ce4a9cc4f04c763d95ad67|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Sibele\Char_Title_Sibele_1.png|CHAR_TITLES\SIBELE\Char_Title_Sibele_1.png
+f14ca90a0efb0f36f75144f2ce924201|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Sibele\Char_Title_Sibele_2.png|CHAR_TITLES\SIBELE\Char_Title_Sibele_2.png
+2996fa179f1ef883c34ca26c15750e20|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Sibele\Char_Title_Sibele_3.png|CHAR_TITLES\SIBELE\Char_Title_Sibele_3.png
+362a213e91b90df9308389d4bd7993cc|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Virilia\Char_Name_Virilia.png|CHAR_TITLES\VIRILIA\Char_Name_Virilia.png
+bb9d48fb143a06b29935e4d85f0a9adf|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Virilia\Char_Title_Virilia_1.png|CHAR_TITLES\VIRILIA\Char_Title_Virilia_1.png
+bf5cacd5a99bec8a2bbc2851b7860a7f|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Virilia\Char_Title_Virilia_2.png|CHAR_TITLES\VIRILIA\Char_Title_Virilia_2.png
+90a0f715669dbd9c065186ae2cf7794c|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Virilia\Char_Title_Virilia_3.png|CHAR_TITLES\VIRILIA\Char_Title_Virilia_3.png
+57f5a82ec8b33db5cac913084776a519|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Sibilia\Char_Name_Sibilia.png|CHAR_TITLES\SIBILIA\Char_Name_Sibilia.png
+d87d7fbcd0f61522882868be9068dfed|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Sibilia\Char_Title_Sibilia_1.png|CHAR_TITLES\SIBILIA\Char_Title_Sibilia_1.png
+eadeb64724543ee08695019198e4c68b|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Sibilia\Char_Title_Sibilia_2.png|CHAR_TITLES\SIBILIA\Char_Title_Sibilia_2.png
+a2e946a01eadd74b091a7dcc990089ff|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Character Titles\Sibilia\Char_Title_Sibilia_3.png|CHAR_TITLES\SIBILIA\Char_Title_Sibilia_3.png
 da101e1cda3434657ceb67d2070a3710|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Sprites\Sanae_Player.png|Sanae_Player.png
 09c67f045ee56fa7aeb25ec6f5310b3e|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Sprites\Yukari_Boss.png|Yukari_Boss.png
 fcd863967a7818d626994aa7d5cb12f1|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Sprites\Isaki_Small_Boss.png|Isaki_Small_Boss.png
+47ee869e7cd39e020c7acc5e6fd68210|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Sprites\Sibele_Boss.png|Sibele_Boss.png
+34d42ce0e30c4f8f60e72df0ee7b7329|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Sprites\Virilia_Small_Boss.png|Virilia_Small_Boss.png
+90eba85249005f7f9fde10c94d0db2a9|C:\Users\user\Documents\Autocatalysis-of-Unrecognizable-Katzenjammer\project\Sprites\Tsukasa_Small_Boss.png|Tsukasa_Small_Boss.png
