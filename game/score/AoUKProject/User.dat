@@ -1,22 +1,53 @@
 {
 	"act1_4_cleartimes": 8,
 	"act2_1_cleartimes": 28,
-	"act2_3_cleartimes": 21,
-	"act2_2_cleartimes": 1,
-	"act2_4_cleartimes": 11,
+	"dialog_five": true,
+	"title_opt": 1,
+	"act2_2_cleartimes": 2,
+	"act2_4_cleartimes": 12,
 	"quest_5": false,
 	"item_available_3": true,
 	"itemsel": 7,
-	"mp": 1000220,
+	"mp": 1000226,
 	"quest_4": true,
 	"dialog_one": true,
 	"dialog_three": true,
 	"item_available_5": true,
 	"item_available_4": true,
 	"repsaver": "w9+)",
-	"act_opt": 2,
+	"act_opt": 3,
+	"act1_2_cleartimes": 1,
 	"item_available_2": true,
-	"scene_opt": 4,
+	"scene_opt": 1,
+	"dialog_two": true,
+	"hiscore": {
+		"1@Act1-1@Sanae_Kochiya": 1919680,
+		"1@Act2-2@Sanae_Kochiya": 1715950,
+		"1@Act1-3@Sanae_Kochiya": 2010050,
+		"1@Act1-2@Sanae_Kochiya": 1586290,
+		"1@Act2-1@Sanae_Kochiya": 1984490,
+		"1@Act1-4@Sanae_Kochiya": 1855410,
+		"1@Act3-1@Sanae_Kochiya": 0,
+		"SC Debugger@SC Debugger@Sanae_Kochiya": 16000,
+		"1@Act2-4@Sanae_Kochiya": 2025500,
+		"1@Tutorial@Sanae_Kochiya": 1756710,
+		"1@Act2-3@Sanae_Kochiya": 1970550
+	},
+	"loading": true,
+	"quest_1": false,
+	"act1_1_cleartimes": 2,
+	"item_available_6": true,
+	"tutoriallock": false,
+	"act_2_available": true,
+	"item_available_1": true,
+	"quest_2": true,
+	"dialog_four": true,
+	"quest_3": true,
+	"act2_3_cleartimes": 21,
+	"item_available_7": true,
+	"restable_opt_var": 4,
+	"act_3_available": true,
+	"act1_3_cleartimes": 9,
 	"spell_card_hist": {
 		"All": {
 			"ceremony of": {
@@ -25,16 +56,10 @@
 					6
 				]
 			},
-			"Attract Yearn \"White; Reverent Silk Touch of Wish Makers\"": {
-				"Sanae_Kochiya": [
-					1,
-					4
-				]
-			},
 			"Novus Iris Nativitas \"Nonconforming Ceremony of Brilliance\"": {
 				"Sanae_Kochiya": [
 					0,
-					14
+					17
 				]
 			},
 			"Transient Rain \"Ancient Hologram of Veneralia Veneration\"": {
@@ -42,35 +67,31 @@
 					0,
 					3
 				]
+			},
+			"Attract Yearn \"White; Reverent Silk Touch of Wish Makers\"": {
+				"Sanae_Kochiya": [
+					1,
+					4
+				]
+			},
+			"Pathogen Annihilation \"Two Steps in the Afternoon\"": {
+				"Sanae_Kochiya": [
+					2,
+					6
+				]
+			},
+			"Treasured Phantom Casket \"Connecting the Chain Theory of Roulettes\"": {
+				"Sanae_Kochiya": [
+					1,
+					1
+				]
+			},
+			"Heat Wave \"Fiery Discombobulation\"": {
+				"Sanae_Kochiya": [
+					0,
+					2
+				]
 			}
 		}
-	},
-	"hiscore": {
-		"1@Act1-1@Sanae_Kochiya": 1632450,
-		"1@Act2-2@Sanae_Kochiya": 1715950,
-		"1@Act1-2@Sanae_Kochiya": 1586290,
-		"1@Act1-4@Sanae_Kochiya": 1855410,
-		"1@Act1-3@Sanae_Kochiya": 2010050,
-		"1@Act2-4@Sanae_Kochiya": 2025500,
-		"SC Debugger@SC Debugger@Sanae_Kochiya": 16000,
-		"1@Act2-3@Sanae_Kochiya": 1970550,
-		"1@Tutorial@Sanae_Kochiya": 1756710,
-		"1@Act2-1@Sanae_Kochiya": 1984490
-	},
-	"act1_3_cleartimes": 9,
-	"quest_1": false,
-	"title_opt": 1,
-	"item_available_6": true,
-	"restable_opt_var": 4,
-	"loading": true,
-	"item_available_1": true,
-	"quest_2": true,
-	"dialog_four": true,
-	"act_2_available": true,
-	"quest_3": true,
-	"item_available_7": true,
-	"act1_1_cleartimes": 1,
-	"tutoriallock": false,
-	"dialog_two": true,
-	"act1_2_cleartimes": 1
+	}
 }
