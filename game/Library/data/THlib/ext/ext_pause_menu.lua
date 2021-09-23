@@ -108,7 +108,11 @@ function ext.pausemenu:frame()
                 if not ext.rep_over then
                     self.t = 60
                     PlaySound('cancel00', 0.3)
-                    self:FlyOut()
+                    if lstg.var.lifeleft <= 0 then
+                        -- baited bingos
+                    else
+                        self:FlyOut()
+                    end
                 end
             end
         end

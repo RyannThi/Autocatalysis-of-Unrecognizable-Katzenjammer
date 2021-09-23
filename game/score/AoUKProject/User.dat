@@ -1,95 +1,192 @@
 {
-	"act1_4_cleartimes": 8,
-	"act2_1_cleartimes": 28,
-	"dialog_five": true,
-	"title_opt": 1,
-	"act2_2_cleartimes": 2,
-	"act2_4_cleartimes": 12,
+	"act1_4_cleartimes": 1,
+	"act3_1_cleartimes": 3,
+	"act2_1_cleartimes": 1,
+	"act3_3_cleartimes": 1,
+	"act3_2_cleartimes": 1,
+	"act2_2_cleartimes": 1,
+	"act3_4_cleartimes": 1,
+	"act2_4_cleartimes": 1,
 	"quest_5": false,
 	"item_available_3": true,
-	"itemsel": 7,
-	"mp": 1000226,
+	"itemsel": 4,
+	"mp": 80,
 	"quest_4": true,
 	"dialog_one": true,
 	"dialog_three": true,
-	"item_available_5": true,
+	"dialog_seven": true,
 	"item_available_4": true,
-	"repsaver": "w9+)",
-	"act_opt": 3,
+	"act_opt": 4,
 	"act1_2_cleartimes": 1,
+	"act_4_available": true,
+	"scene_opt": 3,
+	"act1_1_cleartimes": 3,
+	"dialog_six_stageclear": true,
+	"act4_1_cleartimes": 1,
+	"dialog_six": true,
 	"item_available_2": true,
-	"scene_opt": 1,
-	"dialog_two": true,
-	"hiscore": {
-		"1@Act1-1@Sanae_Kochiya": 1919680,
-		"1@Act2-2@Sanae_Kochiya": 1715950,
-		"1@Act1-3@Sanae_Kochiya": 2010050,
-		"1@Act1-2@Sanae_Kochiya": 1586290,
-		"1@Act2-1@Sanae_Kochiya": 1984490,
-		"1@Act1-4@Sanae_Kochiya": 1855410,
-		"1@Act3-1@Sanae_Kochiya": 0,
-		"SC Debugger@SC Debugger@Sanae_Kochiya": 16000,
-		"1@Act2-4@Sanae_Kochiya": 2025500,
-		"1@Tutorial@Sanae_Kochiya": 1756710,
-		"1@Act2-3@Sanae_Kochiya": 1970550
-	},
 	"loading": true,
-	"quest_1": false,
-	"act1_1_cleartimes": 2,
+	"quest_3": true,
+	"hiscore": {
+		"1@Act1-4@Sanae_Kochiya": 1820710,
+		"SC Debugger@SC Debugger@Sanae_Kochiya": 3123960,
+		"1@Tutorial@Sanae_Kochiya": 1765530,
+		"1@Act3-2@Sanae_Kochiya": 1422760,
+		"1@Act2-2@Sanae_Kochiya": 1768260,
+		"1@Act2-1@Sanae_Kochiya": 1739080,
+		"1@Act4-2@Sanae_Kochiya": 2338370,
+		"1@Act3-4@Sanae_Kochiya": 2322810,
+		"1@Act3-1@Sanae_Kochiya": 5340,
+		"1@Act1-1@Sanae_Kochiya": 1826020,
+		"1@Act4-1@Sanae_Kochiya": 94440,
+		"1@Act4-3@Sanae_Kochiya": 129350,
+		"1@Act1-2@Sanae_Kochiya": 1796690,
+		"1@Act3-3@Sanae_Kochiya": 1745470,
+		"1@Act2-4@Sanae_Kochiya": 2285000,
+		"1@Act2-3@Sanae_Kochiya": 1679670,
+		"1@Act1-3@Sanae_Kochiya": 2302570
+	},
+	"item_available_5": true,
+	"item_available_7": true,
+	"dialog_two": true,
 	"item_available_6": true,
-	"tutoriallock": false,
-	"act_2_available": true,
+	"act4_2_cleartimes": 14,
+	"quest_1": false,
 	"item_available_1": true,
 	"quest_2": true,
 	"dialog_four": true,
-	"quest_3": true,
-	"act2_3_cleartimes": 21,
-	"item_available_7": true,
-	"restable_opt_var": 4,
+	"act2_3_cleartimes": 1,
+	"title_opt": 1,
+	"tutoriallock": false,
+	"act_2_available": true,
 	"act_3_available": true,
-	"act1_3_cleartimes": 9,
+	"act1_3_cleartimes": 7,
 	"spell_card_hist": {
 		"All": {
-			"ceremony of": {
+			"Transmutation \"Manipulating a Field's Focal Point\"": {
 				"Sanae_Kochiya": [
 					3,
-					6
+					78
 				]
 			},
-			"Novus Iris Nativitas \"Nonconforming Ceremony of Brilliance\"": {
-				"Sanae_Kochiya": [
-					0,
-					17
-				]
-			},
-			"Transient Rain \"Ancient Hologram of Veneralia Veneration\"": {
-				"Sanae_Kochiya": [
-					0,
-					3
-				]
-			},
-			"Attract Yearn \"White; Reverent Silk Touch of Wish Makers\"": {
+			"Industrial Necropotence \"Equine Resistance\"": {
 				"Sanae_Kochiya": [
 					1,
-					4
+					2
 				]
 			},
-			"Pathogen Annihilation \"Two Steps in the Afternoon\"": {
-				"Sanae_Kochiya": [
-					2,
-					6
-				]
-			},
-			"Treasured Phantom Casket \"Connecting the Chain Theory of Roulettes\"": {
+			"Greenhouse Effect \"Melting Feathers of a Jackal\"": {
 				"Sanae_Kochiya": [
 					1,
 					1
 				]
 			},
+			"Creeping Vineyard": {
+				"Sanae_Kochiya": [
+					2,
+					40
+				]
+			},
+			"Maladaptive Summoning \"Squelching of Malevolent Entities\"": {
+				"Sanae_Kochiya": [
+					1,
+					3
+				]
+			},
+			"Treasured Phantom Casket \"Connecting the Chain Theory of Roulettes\"": {
+				"Sanae_Kochiya": [
+					1,
+					5
+				]
+			},
+			"dfsdfsdfsdf": {
+				"Sanae_Kochiya": [
+					2,
+					65
+				]
+			},
+			"Neverending Nightmare \"Catastrophic and Poisonous Sickness\"": {
+				"Sanae_Kochiya": [
+					1,
+					10
+				]
+			},
+			"Pathogen Annihilation \"Two Steps in the Afternoon\"": {
+				"Sanae_Kochiya": [
+					3,
+					48
+				]
+			},
+			"sdasdasd": {
+				"Sanae_Kochiya": [
+					3,
+					23
+				]
+			},
+			"Comet Strike \"Wishing Star Imposing as Comet Falling on Well\"": {
+				"Sanae_Kochiya": [
+					2,
+					11
+				]
+			},
+			"Requiem for the Betrayed \"Raising Underworld\"": {
+				"Sanae_Kochiya": [
+					3,
+					47
+				]
+			},
 			"Heat Wave \"Fiery Discombobulation\"": {
 				"Sanae_Kochiya": [
+					7,
+					9
+				]
+			},
+			"asddsa": {
+				"Sanae_Kochiya": [
 					0,
-					2
+					9
+				]
+			},
+			"sasdasddas": {
+				"Sanae_Kochiya": [
+					0,
+					15
+				]
+			},
+			"Novus Iris Nativitas \"Nonconforming Ceremony of Brilliance\"": {
+				"Sanae_Kochiya": [
+					1,
+					9
+				]
+			},
+			"\"Prismatic Phantasm Phenomenon\"": {
+				"Sanae_Kochiya": [
+					1,
+					1
+				]
+			},
+			"Attract Yearn \"White; Reverent Silk Touch of Wish Makers\"": {
+				"Sanae_Kochiya": [
+					1,
+					12
+				]
+			},
+			"Creeping Vineyard \"Lavigne Skirmish\"": {
+				"Sanae_Kochiya": [
+					2,
+					7
+				]
+			},
+			"xvxccxv": {
+				"Sanae_Kochiya": [
+					12,
+					113
+				]
+			},
+			"Transient Rain \"Ancient Hologram of Veneralia Veneration\"": {
+				"Sanae_Kochiya": [
+					1,
+					1
 				]
 			}
 		}
