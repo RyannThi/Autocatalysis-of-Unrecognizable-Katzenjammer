@@ -6,23 +6,23 @@
 		"snapshot": 36,
 		"retry": 82
 	},
-	"resx": 1600,
+	"bgmvolume": 100,
 	"keys": {
 		"right": 39,
 		"left": 37,
 		"slow": 16,
-		"down": 40,
 		"up": 38,
-		"special": 67,
+		"down": 40,
+		"spell": 88,
 		"shoot": 90,
-		"spell": 88
+		"special": 67
 	},
 	"timezone": 8,
 	"nosplash": true,
-	"bgmvolume": 100,
+	"windowed": true,
 	"res": 1,
 	"allowsnapshot": true,
-	"resy": 900,
+	"resy": 720,
 	"mod": "AoUKProject",
 	"font": "",
 	"vsync": true,
@@ -30,13 +30,13 @@
 		"right": 99,
 		"left": 97,
 		"slow": 65,
-		"down": 98,
 		"up": 101,
-		"special": 70,
+		"down": 98,
+		"spell": 68,
 		"shoot": 83,
-		"spell": 68
+		"special": 70
 	},
 	"username": "User",
 	"sevolume": 100,
-	"windowed": true
+	"resx": 1280
 }

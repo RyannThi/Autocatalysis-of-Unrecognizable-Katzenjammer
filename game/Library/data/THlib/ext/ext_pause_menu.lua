@@ -61,7 +61,9 @@ function ext.pausemenu:frame()
                 self.t = 60
                 PlaySound('cancel00', 0.3)
                 self.choose = false
-                self:FlyOut()
+                if lstg.var.lifeleft > 0 then
+                    self:FlyOut()
+                end
             end
         end
         --直接重开

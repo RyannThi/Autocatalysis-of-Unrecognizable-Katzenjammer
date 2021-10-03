@@ -1,0 +1,283 @@
+{
+	"act1_4_cleartimes": 2,
+	"dialog_five": true,
+	"title_opt": 8,
+	"act3_4_cleartimes": 4,
+	"act2_4_cleartimes": 2,
+	"quest_5": true,
+	"mp": 430,
+	"dialog_three": true,
+	"item_available_4": true,
+	"item_available_2": true,
+	"loading": true,
+	"hiscore": {
+		"1@Act2-3@Sanae_Kochiya": 1872900,
+		"1@Act2-1@Sanae_Kochiya": 2071840,
+		"SC Debugger@SC Debugger@Sanae_Kochiya": 1807310,
+		"1@Act3-1@Sanae_Kochiya": 1739530,
+		"1@Tutorial@Sanae_Kochiya": 1732540,
+		"1@Act3-4@Sanae_Kochiya": 2557330,
+		"1@Act1-1@Sanae_Kochiya": 2347530,
+		"1@Act5-4@Sanae_Kochiya": 1794050,
+		"1@Act1-2@Sanae_Kochiya": 1882940,
+		"1@Act4-1@Sanae_Kochiya": 1980130,
+		"1@Act5-2@Sanae_Kochiya": 1807110,
+		"1@Act4-3@Sanae_Kochiya": 1897920,
+		"1@Act3-3@Sanae_Kochiya": 1995130,
+		"1@Act5-3@Sanae_Kochiya": 1832000,
+		"1@Act1-4@Sanae_Kochiya": 1780780,
+		"1@Act1-3@Sanae_Kochiya": 2166010,
+		"1@Act3-2@Sanae_Kochiya": 1898140,
+		"1@Act4-2@Sanae_Kochiya": 1748920,
+		"1@Act2-4@Sanae_Kochiya": 2049500,
+		"1@Act2-2@Sanae_Kochiya": 1831150,
+		"1@Act4-4@Sanae_Kochiya": 4606610,
+		"1@Act5-1@Sanae_Kochiya": 1845110
+	},
+	"act4_1_cleartimes": 2,
+	"act4_3_cleartimes": 5,
+	"act4_2_cleartimes": 2,
+	"item_available_1": true,
+	"act5_1_cleartimes": 2,
+	"act5_3_cleartimes": 2,
+	"act5_2_cleartimes": 1,
+	"act_2_available": true,
+	"act_3_available": true,
+	"dialog_two": true,
+	"act_5_available": true,
+	"act3_1_cleartimes": 2,
+	"act2_1_cleartimes": 2,
+	"act3_3_cleartimes": 2,
+	"act3_2_cleartimes": 2,
+	"act2_2_cleartimes": 2,
+	"tutoriallock": false,
+	"item_available_3": true,
+	"itemsel": 2,
+	"quest_4": true,
+	"quest_1": true,
+	"dialog_one": true,
+	"act4_1_attempttimes": 9,
+	"act1_2_attempttimes": 3,
+	"act5_1_attempttimes": 26,
+	"act1_1_attempttimes": 20,
+	"act5_4_attempttimes": 19,
+	"act3_1_attempttimes": 9,
+	"act2_1_attempttimes": 9,
+	"act3_3_attempttimes": 9,
+	"act2_3_attempttimes": 6,
+	"act2_2_attempttimes": 9,
+	"act4_3_attempttimes": 87,
+	"act4_2_attempttimes": 12,
+	"act_opt": 1,
+	"act4_4_attempttimes": 74,
+	"act2_4_attempttimes": 6,
+	"repsaver": "AAA",
+	"act3_4_attempttimes": 13,
+	"act3_2_attempttimes": 10,
+	"scene_opt": 1,
+	"item_available_5": false,
+	"dialog_six": true,
+	"act1_2_cleartimes": 2,
+	"quest_3": true,
+	"act1_3_cleartimes": 12,
+	"act1_1_cleartimes": 7,
+	"act2_3_cleartimes": 2,
+	"item_available_7": true,
+	"dialog_six_stageclear": true,
+	"item_available_6": false,
+	"act_4_available": true,
+	"act1_4_attempttimes": 7,
+	"act4_4_cleartimes": 4,
+	"quest_2": true,
+	"dialog_four": true,
+	"showending": false,
+	"act5_3_attempttimes": 17,
+	"act5_2_attempttimes": 11,
+	"restable_opt_var": 4,
+	"act5_4_cleartimes": 1,
+	"act1_3_attempttimes": 38,
+	"spell_card_hist": {
+		"All": {
+			"Transmutation \"Manipulating a Field's Focal Point\"": {
+				"Sanae_Kochiya": [
+					3,
+					7
+				]
+			},
+			"Industrial Necropotence \"Equine Resistance\"": {
+				"Sanae_Kochiya": [
+					2,
+					6
+				]
+			},
+			"\"A Snake Eats an Apple\"": {
+				"Sanae_Kochiya": [
+					0,
+					5
+				]
+			},
+			"Greenhouse Effect \"Melting Feathers of a Jackal\"": {
+				"Sanae_Kochiya": [
+					2,
+					3
+				]
+			},
+			"Lollipop Deconstruction \"An Albino Snake Eats an Apple\"": {
+				"Sanae_Kochiya": [
+					1,
+					36
+				]
+			},
+			"Maladaptive Summoning \"Squelching of Malevolent Entities\"": {
+				"Sanae_Kochiya": [
+					2,
+					8
+				]
+			},
+			"Treasured Phantom Casket \"Connecting the Chain Theory of Roulettes\"": {
+				"Sanae_Kochiya": [
+					2,
+					9
+				]
+			},
+			"Requiem for the Betrayed \"Raising Underworld\"": {
+				"Sanae_Kochiya": [
+					4,
+					12
+				]
+			},
+			"\"An Albino Snake Eats an Apple\"": {
+				"Sanae_Kochiya": [
+					0,
+					10
+				]
+			},
+			"asd": {
+				"Sanae_Kochiya": [
+					2,
+					28
+				]
+			},
+			"sasdasddas": {
+				"Sanae_Kochiya": [
+					2,
+					10
+				]
+			},
+			"Palpable Wish \"Shifting Focus; Deviation of Source\"": {
+				"Sanae_Kochiya": [
+					11,
+					77
+				]
+			},
+			"xcvcvxcvx": {
+				"Sanae_Kochiya": [
+					0,
+					17
+				]
+			},
+			"Andromeda \"Canicule of Distorted Sparks\"": {
+				"Sanae_Kochiya": [
+					3,
+					61
+				]
+			},
+			"asdsa": {
+				"Sanae_Kochiya": [
+					5,
+					45
+				]
+			},
+			"gfddfg": {
+				"Sanae_Kochiya": [
+					1,
+					16
+				]
+			},
+			"Erratic Uranometria Stars \"Disengagement of Karanga and Tswana\"": {
+				"Sanae_Kochiya": [
+					8,
+					22
+				]
+			},
+			"Transient Rain \"Ancient Hologram of Veneralia Veneration\"": {
+				"Sanae_Kochiya": [
+					2,
+					8
+				]
+			},
+			"sfdsfd": {
+				"Sanae_Kochiya": [
+					0,
+					48
+				]
+			},
+			"Neverending Nightmare \"Catastrophic and Poisonous Sickness\"": {
+				"Sanae_Kochiya": [
+					2,
+					10
+				]
+			},
+			"Entropy Detachment \"Eastern Star Targeting\"": {
+				"Sanae_Kochiya": [
+					2,
+					16
+				]
+			},
+			"Heat Wave \"Fiery Discombobulation\"": {
+				"Sanae_Kochiya": [
+					12,
+					36
+				]
+			},
+			"Novus Iris Nativitas \"Nonconforming Ceremony of Brilliance\"": {
+				"Sanae_Kochiya": [
+					2,
+					5
+				]
+			},
+			"Creeping Vineyard \"Lavigne Skirmish\"": {
+				"Sanae_Kochiya": [
+					2,
+					8
+				]
+			},
+			"\"Prismatic Phantasm Phenomenon\"": {
+				"Sanae_Kochiya": [
+					2,
+					3
+				]
+			},
+			"Pathogen Annihilation \"Two Steps in the Afternoon\"": {
+				"Sanae_Kochiya": [
+					7,
+					20
+				]
+			},
+			"Attract Yearn \"White; Reverent Silk Touch of Wish Makers\"": {
+				"Sanae_Kochiya": [
+					2,
+					5
+				]
+			},
+			"Electric Heritage \"Undercover Whippersnapper\"": {
+				"Sanae_Kochiya": [
+					5,
+					42
+				]
+			},
+			"Comet Strike \"Wishing Star Imposing as Comet Falling on Well\"": {
+				"Sanae_Kochiya": [
+					4,
+					11
+				]
+			},
+			"Erratic Star": {
+				"Sanae_Kochiya": [
+					2,
+					33
+				]
+			}
+		}
+	}
+}

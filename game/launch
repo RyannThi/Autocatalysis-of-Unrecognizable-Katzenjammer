@@ -273,9 +273,9 @@ saveConfigure()-- 保存
 if #args>=2 then loadstring(args[2])() end
 
 if not start_game then
-	setting.mod='launcher'
-	setting.resx=480
-	setting.resy=853
+	setting.mod='AoUKProject'
+	setting.resx=853
+	setting.resy=480
 	setting.windowed=true
 	setting.nosplash=true
 	setting.allowsnapshot=false

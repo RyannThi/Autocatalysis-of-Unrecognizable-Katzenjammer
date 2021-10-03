@@ -1,3 +1,4 @@
 Fuzzbearplush (+ DD) - Sanae player sprite
+FelisLicht - Sanae frogs
 
-Other credits inside Library/ryannlibcredits.txt
+Other credits inside ryannlibcredits.txt

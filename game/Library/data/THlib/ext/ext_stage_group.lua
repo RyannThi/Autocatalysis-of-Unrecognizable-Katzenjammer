@@ -84,7 +84,7 @@ function stage.group.frame(self)
             --PlayMusic(deathmusic, 0.8)
             ext.pop_pause_menu = true
             lstg.tmpvar.death = true
-            lstg.tmpvar.pause_menu_text = { 'Continue', 'Quit and Save Replay', 'Restart' }
+            lstg.tmpvar.pause_menu_text = { 'Continue', 'Quit and Save Replay', 'Return to Title' }
         end
         lstg.var.lifeleft = 0
     end
